@@ -27,4 +27,11 @@ R_
 # --------
 # #MATRIX
 # to enter a matrix, you can do it manually or using CBIND(X,Y..) or RBIND(XY..) wehre you bind bunch of rows or columns
-#   
+# --------
+# pivot_longer(dataset,-c(column1,column2)). Any column called would be spared, everything else would be pivoted. Test using the relig_income dataset in r
+# library(tidyr)
+# <- pivot_longer(relig_income,-religion)
+# <- pivot_longer(relig_income,-religion, names_to ="income",values_to = "total")#use to name the column headers. 
+# you can revert back using pivot_wider()
+---------
+
